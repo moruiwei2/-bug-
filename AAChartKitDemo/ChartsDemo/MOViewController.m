@@ -36,14 +36,16 @@
     
     
     UIButton *button_1 = [[UIButton alloc]init];
-    button_1.frame = CGRectMake(50, 50, 50, 50);
+    button_1.frame = CGRectMake(50, 50, 100, 50);
     button_1.backgroundColor = [UIColor greenColor];
     [button_1 addTarget:self action:@selector(click1) forControlEvents:UIControlEventTouchUpInside];
+    [button_1 setTitle:@"button1" forState:UIControlStateNormal];
     [self.view addSubview:button_1];
     
     UIButton *button_2 = [[UIButton alloc]init];
-    button_2.frame = CGRectMake(150, 50, 50, 50);
+    button_2.frame = CGRectMake(250, 50, 100, 50);
     button_2.backgroundColor = [UIColor greenColor];
+    [button_2 setTitle:@"button2" forState:UIControlStateNormal];
     [button_2 addTarget:self action:@selector(click2) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button_2];
     
@@ -163,3 +165,4 @@
 }
 
 @end
+
